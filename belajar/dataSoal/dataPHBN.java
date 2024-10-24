@@ -39,7 +39,6 @@ public class dataPHBN {
             System.out.printf("|            DATA SISWA           |%n");
             System.out.printf("-----------------------------------%n");
             System.out.printf("| %-20s | %-8s |%n", "NAMA SISWA", "KELAS");
-            System.out.printf("-----------------------------------%n");
             for (int i = 0; i < dataSiswa.size(); i++) {
                 System.out.printf("| %-20s | %-8s |%n", dataSiswa.get(i), dataKelas.get(i));
                 // System.out.print("| Nama Siswa : " + dataSiswa.get(i) + "\t" + "\t| ");
@@ -47,11 +46,11 @@ public class dataPHBN {
             }
             opsiTambahan();
         } else if (userInput2 == 2) {
-            System.out.printf("--------------------%n");
-            System.out.printf("| %-3s | %-10s |%n", "NO.","MATA LOMBA");
-            System.out.printf("--------------------%n");
+            System.out.printf("-----------------------------------%n");
+            System.out.printf("| %-3s | %-25s |%n", "NO.","       MATA LOMBA");
+            System.out.printf("-----------------------------------%n");
             for (int i = 0; i < dataLomba.size(); i++) {
-                System.out.printf("| %-3s | %-10s |%n", (i+1 + "."), dataLomba.get(i));
+                System.out.printf("| %-3s | %-25s |%n", (i+1 + "."), dataLomba.get(i));
             }
             opsiTambahan();
         } else if (userInput2 == 3) {
